@@ -1,3 +1,6 @@
 *
 !.gitignore
-
+!install-services.sh
+!object_request_photobooth.py
+!object_request_photobooth.service
+!README.md

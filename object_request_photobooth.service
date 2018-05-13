@@ -1,0 +1,11 @@
+[Unit]
+Description=Will take a picture when all conditions are met
+
+[Service]
+Type=simple
+Restart=no
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/obj-request-photobooth-aiy/object_request_photobooth.py
+
+[Install]
+WantedBy=multi-user.target
