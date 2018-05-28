@@ -20,6 +20,7 @@ def main():
 	lights.set_led_blink() #@TODO blink is currently broken
 	time.sleep(1)
 	lights.set_led_off()
+	sound.blip()
 
 
 if __name__ == '__main__':
