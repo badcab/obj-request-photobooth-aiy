@@ -5,6 +5,8 @@
 import time
 import led_module
 import sound_module
+import object_detection_module
+import rand_photo_requirements
 
 def main():
 	lights = led_module.Led_module()
