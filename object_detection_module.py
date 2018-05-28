@@ -1,6 +1,6 @@
 class Object_detection_module:
 	from picamera import PiCamera
-	from aiy.vision.inference import ImageInference
+	from aiy.vision.inference import CameraInference
 	from aiy.vision.models import object_detection
 
 	def get_on_screen(self):
