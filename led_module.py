@@ -44,7 +44,7 @@ class Led_module:
 	def set_privacy_on():
 		leds.update(Leds.privacy_on())
 		if(self.verbose):
-			print('p on')
+			print(__name__)
 
 	def set_privacy_off():
 		leds.update(Leds.privacy_off())
