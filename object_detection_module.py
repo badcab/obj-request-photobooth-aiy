@@ -16,6 +16,12 @@ class Object_detection_module:
 		return image.crop((x, y, x + size, y + size)), (x, y)
 
 	def get_on_screen(self):
+	
+		parser = self.argparse.ArgumentParser()
+		parser.add_argument('--input', '-i', dest='input', required=True)
+		parser.add_argument('--output', '-o', dest='output')
+		args = parser.parse_args()
+		
 		with self.ImageInference(self.object_detection.model()) as inference:
 			image = self.Image.open(
 				self.io.BytesIO(self.sys.stdin.buffer.read())
