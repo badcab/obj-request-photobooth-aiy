@@ -1,10 +1,10 @@
 import math
 import time
 
-from aiy.leds import Leds
-from aiy.leds import Pattern
-from aiy.leds import PrivacyLed
-from aiy.leds import RgbLeds
+from aiy.vision.leds import Leds
+from aiy.vision.leds import Pattern
+from aiy.vision.leds import PrivacyLed
+from aiy.vision.leds import RgbLeds
 
 class Led_module:
 	RED = (0xFF, 0x00, 0x00)
