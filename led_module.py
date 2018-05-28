@@ -1,8 +1,6 @@
 import math
 import time
 
-
-
 class Led_module:
 	from aiy.vision.leds import Leds
 	from aiy.vision.leds import Pattern
@@ -29,36 +27,36 @@ class Led_module:
 			print(__name__)
 
 	def set_led_yellow(self):
-		leds.update(Leds.reg_on(YELLOW))
+		self.leds.update(self.Leds.reg_on(self.YELLOW))
 		if(self.verbose):
 			print(__name__)
 
 	def set_led_green(self):
-		leds.update(Leds.reg_on(GREEN))
+		self.leds.update(self.Leds.reg_on(self.GREEN))
 		if(self.verbose):
 			print(__name__)
 
 	def set_led_off(self):
-		leds.update(Leds.rgb_off())
+		self.leds.update(self.Leds.rgb_off())
 		if(self.verbose):
 			print(__name__)
 
 	def set_privacy_on(self):
-		leds.update(Leds.privacy_on())
+		self.leds.update(self.Leds.privacy_on())
 		if(self.verbose):
 			print(__name__)
 
 	def set_privacy_off(self):
-		leds.update(Leds.privacy_off())
+		self.leds.update(self.Leds.privacy_off())
 		if(self.verbose):
 			print(__name__)
 
 	def set_led_blink(self):
-		leds.pattern = Pattern.blink(500)
+		self.leds.pattern = self.Pattern.blink(500)
 		if(self.verbose):
 			p(__name__)
 
 	def reset_led(self):
-		leds.reset()
+		self.leds.reset()
 		if(self.verbose):
 			print(__name__)

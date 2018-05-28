@@ -10,7 +10,7 @@ def main():
 
 	lights.set_led_red()
 	time.sleep(5)
-
+	lights.set_led_off()
 
 
 if __name__ == '__main__':
