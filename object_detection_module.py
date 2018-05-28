@@ -11,7 +11,7 @@ class Object_detection_module:
 
 			with self.CameraInference(self.object_detection.model()) as inference:
 				result = inference.run()
-				for i, obj in enumerate(object_detection.get_objects(result, 0.3)):
+				for i, obj in enumerate(self.object_detection.get_objects(result, 0.3)):
 					print('Object #%d: %s' % (i, str(obj)))
 
 				camera.stop_preview() #to clean it up
