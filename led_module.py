@@ -24,22 +24,22 @@ class Led_module:
 	def set_led_red():
 		leds.update(Leds.reg_on(RED))
 		if(self.verbose):
-			print('red')
+			print(__name__)
 
 	def set_led_yellow():
 		leds.update(Leds.reg_on(YELLOW))
 		if(self.verbose):
-			print('yellow')
+			print(__name__)
 
 	def set_led_green():
 		leds.update(Leds.reg_on(GREEN))
 		if(self.verbose):
-			print('green')
+			print(__name__)
 
 	def set_led_off():
 		leds.update(Leds.rgb_off())
 		if(self.verbose):
-			print('off')
+			print(__name__)
 
 	def set_privacy_on():
 		leds.update(Leds.privacy_on())
@@ -49,14 +49,14 @@ class Led_module:
 	def set_privacy_off():
 		leds.update(Leds.privacy_off())
 		if(self.verbose):
-			print('p off')
+			print(__name__)
 
 	def set_led_blink():
 		leds.pattern = Pattern.blink(500)
 		if(self.verbose):
-			p('blink')
+			p(__name__)
 
 	def reset_led():
 		leds.reset()
 		if(self.verbose):
-			print('reset')
+			print(__name__)
