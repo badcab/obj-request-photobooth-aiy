@@ -14,18 +14,19 @@ def main():
 	detect = object_detection_module.Object_detection_module()
 	req = rand_photo_requirements.Rand_photo_req()
 
-	sound.shutter()
-	lights.set_led_red()
-	time.sleep(1)
-	lights.set_led_yellow() #@todo yellow look a little green
-	time.sleep(1)
-	lights.set_led_green()
-	time.sleep(1)
-	lights.set_led_blink() #@TODO blink is currently broken
-	time.sleep(1)
-	lights.set_led_off()
-	sound.blip()
+	#sound.shutter()
+	#lights.set_led_red()
+	#time.sleep(1)
+	#lights.set_led_yellow() #@todo yellow look a little green
+	#time.sleep(1)
+	#lights.set_led_green()
+	#time.sleep(1)
+	#lights.set_led_blink() #@TODO blink is currently broken
+	#time.sleep(1)
+	#lights.set_led_off()
+	#sound.blip()
 	
+	detect.get_on_screen()
 
 	while 1 == 1: #@TODO change to while btn not pressed
 		requirement = req.get_new_photo_requirement()
