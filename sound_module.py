@@ -7,5 +7,5 @@ class Sound_module:
 			'Be',
 			'C5e',
 		]
-		player = aiy.toneplayer.TonePlayer(22)
+		player = self.aiy.toneplayer.TonePlayer(22)
 		player.play(*ts)
