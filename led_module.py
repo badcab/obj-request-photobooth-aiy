@@ -15,45 +15,26 @@ class Led_module:
 
 	leds = Leds()
 
-	def __init__(self, verbose):
-		self.verbose = bool(verbose)
-
 	def set_led_red(self):
 		self.leds.update(self.Leds.rgb_on(self.RED))
-		if(self.verbose):
-			print(__name__)
 
 	def set_led_yellow(self):
 		self.leds.update(self.Leds.rgb_on(self.YELLOW))
-		if(self.verbose):
-			print(__name__)
 
 	def set_led_green(self):
 		self.leds.update(self.Leds.rgb_on(self.GREEN))
-		if(self.verbose):
-			print(__name__)
 
 	def set_led_off(self):
 		self.leds.update(self.Leds.rgb_off())
-		if(self.verbose):
-			print(__name__)
 
 	def set_privacy_on(self):
 		self.leds.update(self.Leds.privacy_on())
-		if(self.verbose):
-			print(__name__)
 
 	def set_privacy_off(self):
 		self.leds.update(self.Leds.privacy_off())
-		if(self.verbose):
-			print(__name__)
 
 	def set_led_blink(self):
 		self.leds.pattern = self.Pattern.blink(500)
-		if(self.verbose):
-			p(__name__)
 
 	def reset_led(self):
 		self.leds.reset()
-		if(self.verbose):
-			print(__name__)
