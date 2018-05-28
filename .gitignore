@@ -5,4 +5,5 @@
 !object_request_photobooth.service
 !README.md
 !led_module.py
+!setup.sh
 
