@@ -6,7 +6,7 @@ import time
 import led_module
 
 def main():
-	lights = led_module.Led_module(0)
+	lights = led_module.Led_module()
 
 	lights.set_led_red()
 	time.sleep(5)
