@@ -26,7 +26,9 @@ def main():
 	#lights.set_led_off()
 	#sound.blip()
 	
+	sound.shutter()
 	detect.get_on_screen()
+	sound.blip()
 
 	while 1 == 1: #@TODO change to while btn not pressed
 		requirement = req.get_new_photo_requirement()
