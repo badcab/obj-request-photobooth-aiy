@@ -6,9 +6,15 @@ import time
 import led_module
 
 def main():
-	lights = led_module.Led_module(1)
+	lights = led_module.Led_module(0)
 
 	lights.set_led_red()
+	time.sleep(5)
+	lights.set_led_yellow()
+	time.sleep(5)
+	lights.set_led_green()
+	time.sleep(5)
+	lights.set_led_blink()
 	time.sleep(5)
 	lights.set_led_off()
 

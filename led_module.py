@@ -1,6 +1,3 @@
-import math
-import time
-
 class Led_module:
 	from aiy.vision.leds import Leds
 	from aiy.vision.leds import Pattern
@@ -27,12 +24,12 @@ class Led_module:
 			print(__name__)
 
 	def set_led_yellow(self):
-		self.leds.update(self.Leds.reg_on(self.YELLOW))
+		self.leds.update(self.Leds.rgb_on(self.YELLOW))
 		if(self.verbose):
 			print(__name__)
 
 	def set_led_green(self):
-		self.leds.update(self.Leds.reg_on(self.GREEN))
+		self.leds.update(self.Leds.rgb_on(self.GREEN))
 		if(self.verbose):
 			print(__name__)
 
