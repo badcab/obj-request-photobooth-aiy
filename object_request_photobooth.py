@@ -25,9 +25,10 @@ def main():
 	sound.blip()
 	
 
-	while 1 == 1: #@TODO add a breakin feature for if the btn on top is pressed
+	while 1 == 1: #@TODO change to while btn not pressed
 		requirement = req.get_new_photo_requirement()
 		while requirement != detect.get_on_screen(): #@TODO change to be contains
+			print('====================================================')
 			time.sleep(1) #slows things down a bit
 			#determine the color of the led
 		#end while
@@ -35,7 +36,12 @@ def main():
 		lights.set_led_blink()
 		#take the actual picture here
 		sound.shutter()
-		
+		#move picture to target directory
+	#end while
+	#take the actual picture
+	sound.shutter()
+	#move picture to target directory
+	main() #recursively call function again to resume
 
 
 if __name__ == '__main__':
