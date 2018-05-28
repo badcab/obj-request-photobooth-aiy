@@ -10,11 +10,11 @@ def main():
 
 	lights.set_led_red()
 	time.sleep(5)
-	lights.set_led_yellow()
+	lights.set_led_yellow() #@todo yellow look a little green
 	time.sleep(5)
 	lights.set_led_green()
 	time.sleep(5)
-	lights.set_led_blink()
+	lights.set_led_blink() #@TODO blink is currently broken
 	time.sleep(5)
 	lights.set_led_off()
 
