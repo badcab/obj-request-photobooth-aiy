@@ -21,7 +21,7 @@ class Led_module:
 	def __init__(self, verbose):
 		self.verbose = bool(verbose)
 
-	def set_led_red():
+	def set_led_red(self):
 		leds.update(Leds.reg_on(RED))
 		if(self.verbose):
 			print(__name__)
