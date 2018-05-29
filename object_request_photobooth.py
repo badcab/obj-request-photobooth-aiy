@@ -6,6 +6,8 @@ import time
 import led_module
 import sound_module
 
+import photo_module
+
 def main():
 	lights = led_module.Led_module()
 	sound = sound_module.Sound_module()
@@ -22,6 +24,11 @@ def main():
 	lights.set_led_off()
 	sound.blip()
 
+
+
+
+	photo = photo_module.Photo_module()
+	
 
 if __name__ == '__main__':
 	main()

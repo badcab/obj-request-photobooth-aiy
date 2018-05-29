@@ -1,4 +1,5 @@
 *
+!photo_module.py
 !.gitignore
 !install-services.sh
 !object_request_photobooth.py
